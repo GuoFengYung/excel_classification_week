@@ -78,7 +78,6 @@ def read_excel(path_to_excel: str, save_name: str) -> str:
         '時間': fes_li,
         '星期': name_li
     })
-    print(df)
     df.to_csv(os.getcwd() + os.path.sep + 'temp' + os.path.sep + 'output1.csv', encoding="utf_8_sig")
     # endregion ==============================
 
@@ -93,7 +92,6 @@ def read_excel(path_to_excel: str, save_name: str) -> str:
     df5 = pd.read_csv(path_to_excel)
     df4['星期']
     df5['星期'] = df4['星期']
-    print(df5)
     df5.to_csv(save_name, encoding="utf_8_sig", index=False)
     print(f'Done! Csv has converted to {save_name}')
     # endregion ==============================
