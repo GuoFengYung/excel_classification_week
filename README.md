@@ -7,5 +7,5 @@
 ### Classification
 * Script
     ```
-    $ python ./main.py -e=/path/src/origin_data.xlsx -s=/path/to/dst/finaL_data.xlsx
+    $ python ./main.py -e=/path/src/origin_data.csv -s=/path/to/dst/finaL_data.csv
     ```
