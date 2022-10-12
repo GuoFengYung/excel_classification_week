@@ -87,6 +87,7 @@ def read_excel(path_to_excel: str, save_name: str) -> str:
     df3 = pd.concat([df1, df2])
     df3 = df3.drop('Unnamed: 0', axis=1)
     df3 = df3.sort_values(by='時間')
+
     df3.to_csv(os.getcwd() + os.path.sep + 'temp' + os.path.sep + "final.csv", index=False, encoding="utf_8_sig")
     df4 = pd.read_csv(os.getcwd() + os.path.sep + 'temp' + os.path.sep + 'final.csv', encoding="utf_8_sig")
     df5 = pd.read_csv(path_to_excel)
