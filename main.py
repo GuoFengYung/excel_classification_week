@@ -69,6 +69,7 @@ def read_excel(path_to_excel: str, save_name: str) -> str:
     time_list = data['時間'].tolist()
     fes_li = []
     name_li = []
+    
     for time_bar in time_list:
         if time_bar in tw_holiday:
             fes_li.append(time_bar)
